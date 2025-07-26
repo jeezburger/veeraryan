@@ -14,7 +14,9 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768); // crude mobile check
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth < 768);
+    }
   }, []);
 
   return (
