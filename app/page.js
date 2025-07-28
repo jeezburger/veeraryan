@@ -332,6 +332,98 @@ export default function Home() {
         </div>
       )}
       <MiniTerminal />
+      {/* Top-right social app-style icons aligned with folders */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 53,
+          right: 40,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '2rem',
+          zIndex: 3,
+          alignItems: 'center',
+        }}
+      >
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/veeraryan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: 72,
+            height: 72,
+            borderRadius: '16px',
+            backgroundColor: '#0077b5',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.35)',
+            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1)';
+            e.currentTarget.style.boxShadow = '0 6px 24px rgba(0,0,0,0.5)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.35)';
+          }}
+        >
+          <img
+            src="/linkedin.svg"
+            alt="LinkedIn"
+            style={{
+              width: 36,
+              height: 36,
+              filter: 'brightness(1.4) saturate(1.2) drop-shadow(0 0 1px #0f0) drop-shadow(0 0 2px #0f0)',
+              imageRendering: 'pixelated',
+              mixBlendMode: 'screen',
+            }}
+          />
+
+        </a>
+
+        {/* GitHub */}
+        <a
+          href="https://github.com/jeezburger"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: 72,
+            height: 72,
+            borderRadius: '16px',
+            backgroundColor: '#333',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.35)',
+            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1)';
+            e.currentTarget.style.boxShadow = '0 6px 24px rgba(0,0,0,0.5)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.35)';
+          }}
+        >
+          <img
+            src="/github.svg"
+            alt="GitHub"
+            style={{
+              width: 36,
+              height: 36,
+              filter: 'brightness(1.4) saturate(1.2) drop-shadow(0 0 1px #0f0) drop-shadow(0 0 2px #0f0)',
+              imageRendering: 'pixelated',
+              mixBlendMode: 'screen',
+            }}
+          />
+
+        </a>
+      </div>
+
     </div>
   );
 }
