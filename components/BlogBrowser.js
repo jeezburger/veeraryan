@@ -17,6 +17,12 @@ const blogs = [
         image: '/mcd.jpg',
         link: '/blog/blog2', // link to static page
     },
+    {
+        id: 3,
+        title: 'Mathew Almeida',
+        image: '/cazulo.JPG',
+        link: '/blog/blog3', // link to static page
+    },
 ];
 
 // Blog card component
